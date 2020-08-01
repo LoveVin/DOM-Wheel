@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"domWheel.js":[function(require,module,exports) {
+})({"dom-wheel.js":[function(require,module,exports) {
 function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
 
 window.dom = {
@@ -473,5 +473,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","domWheel.js"], null)
-//# sourceMappingURL=/domWheel.4cfbe94c.js.map
+},{}]},{},["C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","dom-wheel.js"], null)
+//# sourceMappingURL=/dom-wheel.a5ab8015.js.map

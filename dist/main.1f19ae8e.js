@@ -133,6 +133,21 @@ var divList = dom.find('.red'); // 获取多个 div.red 元素
 dom.each(divList, function (n) {
   return console.log(n);
 }); // 遍历 divList 里的所有元素
+
+var newDiv = dom.create("\n    <div>\u6211\u662F\u65B0\u521B\u5EFA\u7684 div</div>\n");
+dom.append(document.body, newDiv);
+dom.class.add(newDiv, 'new');
+dom.style(newDiv, {
+  'background-color': 'blue',
+  'color': 'white'
+});
+console.log(dom.index(newDiv));
+var newBeforeNode = dom.create("\n    <div>\u6211\u662F\u65B0\u5EFA\u7684\u524D\u9762\u7684div</div>\n");
+var newAfterNode = dom.create("\n    <div>\u6211\u662F\u65B0\u5EFA\u7684\u540E\u9762\u7684div</div>\n");
+dom.before(newDiv, newBeforeNode);
+dom.after(newDiv, newAfterNode);
+dom.attr(newBeforeNode, 'id', 'newBefore');
+console.log(dom.text(newBeforeNode));
 },{}],"C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -161,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "16414" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2782" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
